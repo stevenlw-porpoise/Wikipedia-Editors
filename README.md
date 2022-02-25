@@ -5,7 +5,7 @@ The aim of this project is to use time series analysis to analyze the monthly nu
 ### Data Source
 https://stats.wikimedia.org/#/metrics/en.wikipedia.org
 I used the editors, total views, and legacy views (for data earlier than 2016) metrics and selected monthly data (daily is also available).
-The editors include all contributors of at least 1 change (Wikipedia also tracks the number of active editors with at least 5 edits. The two series have similar trends, although more than 90% of editors are not active). The page views include all agent types, although most of the hits reflect human traffic.
+The editors include all contributors of at least 1 change (Wikipedia also tracks the number of active editors with at least 5 edits. The two series have similar trends, although more than 90% of editors are not active). The page views include all agent types, although most of the hits reflect human traffic. This was done to be compatible with legacy view trackers from 2016 earlier that didn't split traffic by type.
 
 ### Summary
 I trained the model on all available data starting in 2001 and trained it on the last 2 years of data. The baseline model had a mean absolute error of 31,300.
